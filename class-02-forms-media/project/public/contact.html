@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Ekramul Islam</title>
+  <meta name="description" content="Send a project request and get a free quote within 24 hours.">
+</head>
+<body>
+
+  <header>
+    <a href="index.html">Ekramul.dev</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h1>Let's work together</h1>
+      <p>Fill in the form and I will reply within 24 hours.</p>
+
+      <form action="thank-you.html" method="POST">
+
+        <fieldset>
+          <legend>About you</legend>
+
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" required minlength="3" placeholder="e.g. Karim Uddin">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="01[3-9][0-9]{8}" placeholder="01XXXXXXXXX"
+                 title="11-digit Bangladeshi number, e.g. 01712345678">
+        </fieldset>
+
+        <fieldset>
+          <legend>Your project</legend>
+
+          <label for="service">Service *</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choose a service --</option>
+            <option value="landing">Landing page</option>
+            <option value="business">Business website</option>
+            <option value="convert">Design to code</option>
+          </select>
+
+          <p>Package *</p>
+          <label><input type="radio" name="package" value="basic" required> Basic</label>
+          <label><input type="radio" name="package" value="standard"> Standard</label>
+          <label><input type="radio" name="package" value="premium"> Premium</label>
+
+          <label for="deadline">Deadline</label>
+          <input type="date" id="deadline" name="deadline">
+
+          <label for="message">Project details *</label>
+          <textarea id="message" name="message" rows="5" required minlength="20"></textarea>
+        </fieldset>
+
+        <label><input type="checkbox" name="consent" required> I agree to be contacted *</label>
+
+        <button type="submit">Send request</button>
+      </form>
+    </section>
+
+    <section id="location">
+      <h2>Where I work</h2>
+      <iframe title="Map of Dhaka" src="https://www.openstreetmap.org/export/embed.html?bbox=90.35%2C23.70%2C90.45%2C23.82&amp;layer=mapnik"
+              width="600" height="300" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Email: <a href="mailto:hello@example.com">hello@example.com</a>
+    </address>
+    <p>&copy; 2026 Ekramul Islam</p>
+  </footer>
+
+</body>
+</html>

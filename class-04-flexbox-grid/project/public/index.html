@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekramul Islam – Front-End Developer</title>
+  <meta name="description" content="Freelance front-end developer building fast, responsive websites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4">
+      <a href="index.html" class="font-display text-xl font-bold text-slate-900">Ekramul<span class="text-brand-600">.dev</span></a>
+      <nav aria-label="Main">
+        <ul class="flex gap-6">
+          <li><a href="#about" class="text-slate-600 hover:text-brand-600">About</a></li>
+          <li><a href="#projects" class="text-slate-600 hover:text-brand-600">Projects</a></li>
+          <li><a href="contact.html" class="text-slate-600 hover:text-brand-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 md:grid-cols-2">
+      <div>
+        <h1 class="text-4xl font-bold leading-tight md:text-6xl">I build <span class="text-brand-600">fast, modern</span> websites</h1>
+        <p class="mt-6 max-w-xl text-lg">Hi, I'm Ekramul – a front-end developer from Dhaka. I turn ideas into responsive websites.</p>
+        <a href="contact.html" class="btn-primary mt-8">Hire me</a>
+      </div>
+      <img src="assets/images/avatar.svg" alt="Portrait of Ekramul Islam" width="400" height="400" class="mx-auto w-full max-w-sm rounded-3xl shadow-xl">
+    </section>
+
+    <section id="about" class="bg-slate-50 py-20">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl">About me</h2>
+          <p class="mt-4">I build websites with <strong>HTML5</strong> and <strong>Tailwind CSS</strong> for small businesses.</p>
+          <h3 class="mt-8 text-xl">Skills</h3>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            <li class="rounded-full bg-white px-4 py-1 text-sm shadow-sm">HTML5</li>
+            <li class="rounded-full bg-white px-4 py-1 text-sm shadow-sm">CSS3</li>
+            <li class="rounded-full bg-white px-4 py-1 text-sm shadow-sm">Tailwind CSS</li>
+            <li class="rounded-full bg-white px-4 py-1 text-sm shadow-sm">Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl">Say hello</h3>
+          <video controls width="640" height="360" poster="assets/images/video-poster.svg" class="mt-3 aspect-video w-full rounded-2xl">
+            <source src="assets/media/intro.mp4" type="video/mp4">
+            <track kind="captions" src="assets/media/intro-captions.vtt" srclang="en" label="English">
+            Your browser does not support video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-6xl px-4 py-20">
+      <h2 class="text-3xl">Projects</h2>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="card flex flex-col">
+          <figure>
+            <img src="assets/images/restaurant.svg" alt="Spice Garden website screenshot" width="800" height="500" class="rounded-xl">
+            <figcaption class="mt-2 text-sm text-slate-500">Restaurant landing page</figcaption>
+          </figure>
+          <h3 class="mt-4 text-xl">Spice Garden</h3>
+          <p class="mt-2 flex-1">A one-page website with menu and reservation form.</p>
+          <a href="https://example.com" class="mt-4 font-semibold text-brand-600 hover:underline">Live demo</a>
+        </article>
+
+        <article class="card flex flex-col">
+          <figure>
+            <img src="assets/images/agency.svg" alt="BrightPath website screenshot" width="800" height="500" class="rounded-xl">
+            <figcaption class="mt-2 text-sm text-slate-500">Agency business website</figcaption>
+          </figure>
+          <h3 class="mt-4 text-xl">BrightPath</h3>
+          <p class="mt-2 flex-1">A five-page website for a digital agency.</p>
+          <a href="https://example.com" class="mt-4 font-semibold text-brand-600 hover:underline">Live demo</a>
+        </article>
+
+        <article class="card flex flex-col">
+          <figure>
+            <img src="assets/images/ecommerce.svg" alt="ShopEasy website screenshot" width="800" height="500" class="rounded-xl">
+            <figcaption class="mt-2 text-sm text-slate-500">E-commerce product page</figcaption>
+          </figure>
+          <h3 class="mt-4 text-xl">ShopEasy</h3>
+          <p class="mt-2 flex-1">A product listing page built from a design mockup.</p>
+          <a href="https://example.com" class="mt-4 font-semibold text-brand-600 hover:underline">Live demo</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-8 sm:flex-row">
+      <address class="not-italic">
+        Email: <a href="mailto:hello@example.com" class="text-white hover:underline">hello@example.com</a>
+      </address>
+      <p class="text-sm">&copy; 2026 Ekramul Islam</p>
+    </div>
+  </footer>
+
+</body>
+</html>
