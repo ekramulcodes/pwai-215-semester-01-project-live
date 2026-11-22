@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-slate-700;
+  }
+  h1, h2, h3 {
+    @apply font-display font-semibold text-slate-900;
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:-translate-y-0.5 hover:bg-brand-700 active:scale-95;
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+  .form-input {
+    @apply mt-1 block w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500;
+  }
+  /* Red border only AFTER the user typed something wrong */
+  .form-input:user-invalid {
+    @apply border-red-500;
+  }
+}
+
+/* Respect users who turn off animations in their OS settings */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
